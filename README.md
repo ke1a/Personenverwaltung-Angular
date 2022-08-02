@@ -23,3 +23,21 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Vorgehenseweise
+### Fake Backend
+[JSON Server](https://www.npmjs.com/package/json-server) als Fake Backend ausgewählt.   
+Installation: npm install -g json-server  
+Die db.json Datei wird in die Angular Anwendung hinzugefügt. Sie beinhaltet ein Array aus Person-Objekten mit den Atrributen id, firstName, lastName, email.
+
+### Erstellung der notwendigen Komponenten und dazugehörigen Testdateien
+Vier Angular Komponenten wurden mit der Angular CLI erstellt (AddPerson, EditPerson, PersonDetails, PersonsList). So wurden direkt die zugehörigen Testdateien zu den jeweiligen Komponenten erstellt.
+
+
+### Erstellung eines Service für die Kommunikation mit dem JSON Server
+In dem PersonService werden alle http-Aufrufe durchgeführt.
+
+
+#### Offene Punkte
+Keine FormValidation implementiert.  
+Kein AuthGuard, wäre aber sinnvoll um Navigation über URL zu vermeiden.
