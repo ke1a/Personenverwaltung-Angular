@@ -1,0 +1,13 @@
+<div>
+<h2>Alle Personen</h2>
+<div class="list"   *ngFor="let person of persons; let i = index">
+    <div class="list-item">
+        <h4> {{person.firstName}} {{person.lastName}}</h4>
+        <button routerLink="/edit-person/{{person.id}}">Edit</button>
+        <button routerLink="/person-details/{{ person.id }}">Details</button>
+    </div>
+</div>
+
+
+
+

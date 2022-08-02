@@ -1,0 +1,9 @@
+<h2>Personendetails</h2>
+<div class="personDetails">
+<h3>Id: {{person.id}} </h3>
+<h3>Vorname: {{person.firstName}}</h3>
+<h3>Nachname: {{person.lastName}}</h3>
+<h3>E-Mail: {{person.email }}</h3>
+<button (click)="deletePerson()">Person löschen</button>
+<button routerLink="/edit-person/{{person.id}}">Person bearbeiten</button>
+</div>

@@ -1,0 +1,12 @@
+<h2>Person verwalten</h2>
+<form #personForm="ngForm">
+    <label for="firstName">Vorname:</label>
+    <input ngModel name="firstName" type="text" id="firstName" #firstName="ngModel" [(ngModel)]="person.firstName">
+    <label for="lastName">Nachname:</label>
+    <input ngModel name="lastName" type="text" id="lastName" #lastName="ngModel"  [(ngModel)]="person.lastName" >
+    <label for="email">E-Mail:</label>
+    <input ngModel name="email" type="text" id="email" #email="ngModel" [(ngModel)]="person.email">
+    <input type="submit" value="Änderungen speichern" (click)="savePersonChanges()">
+    <button (click)="deletePerson()">Person löschen</button>
+</form>
+

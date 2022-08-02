@@ -1,0 +1,16 @@
+{
+  "persons": [
+    {
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "email": "M.Muster@mail.de",
+      "id": 4
+    },
+    {
+      "firstName": "Erika",
+      "lastName": "Mustermann",
+      "email": "ErikaMuster@mail..de",
+      "id": 12
+    }
+  ]
+}

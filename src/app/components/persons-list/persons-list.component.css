@@ -1,0 +1,19 @@
+.list {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgray;
+    margin-top: 5px;
+}
+
+button {
+    width: 150px;
+    align-self: center;
+    height: 50%;
+}

@@ -1,0 +1,11 @@
+.personDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    max-width: 25%;
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,10 @@
+<h2>Neue Person erstellen</h2>
+<form #personForm="ngForm">
+    <label for="firstName">Vorname:</label>
+    <input ngModel name="firstName" type="text" id="firstName" #firstName="ngModel" [(ngModel)]="person.firstName">
+    <label for="lastName">Nachname:</label>
+    <input ngModel name="lastName" type="text" id="lastName" #lastName="ngModel"  [(ngModel)]="person.lastName" >
+    <label for="email">E-Mail:</label>
+    <input ngModel name="email" type="text" id="email" #email="ngModel" [(ngModel)]="person.email">
+    <button type="submit" value="Person erstellen" (click)="addNewPerson()">Person erstellen</button>
+</form>
